@@ -2,9 +2,13 @@
 {
     public class Exercise : Entity
     {
-        public LocalizedProperty Name { get; set; }
+        public LocalizedString Name { get; set; }
 
         public int NameId { get; set; }
+
+        public LocalizedString Description { get; set; }
+
+        public int DescriptionId { get; set; }
 
         public Muscle Muscle { get; set; }
 

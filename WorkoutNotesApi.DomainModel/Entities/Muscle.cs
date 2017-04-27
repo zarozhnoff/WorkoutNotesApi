@@ -2,7 +2,7 @@
 {
     public class Muscle : Entity
     {
-        public LocalizedProperty Name { get; set; }
+        public LocalizedString Name { get; set; }
 
         public int NameId { get; set; }
 

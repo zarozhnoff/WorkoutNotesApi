@@ -2,9 +2,9 @@
 {
     public class TranslationItem : Entity
     {
-        public LocalizedString Parent { get; set; }
+        public LocalizedString LocalizedString { get; set; }
 
-        public int ParentId { get; set; }
+        public int LocalizedStringId { get; set; }
 
         public string Value { get; set; }
 

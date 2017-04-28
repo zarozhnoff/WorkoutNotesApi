@@ -49,11 +49,14 @@
     <Compile Include="Interfaces\IApplicationDbContext.cs" />
     <Compile Include="Interfaces\IApplicationUnitOfWork.cs" />
     <Compile Include="Interfaces\IApplicationUnitOfWorkFactory.cs" />
+    <Compile Include="Migrations\201704281427539_InitialMigration.cs" />
+    <Compile Include="Migrations\201704281427539_InitialMigration.Designer.cs">
+      <DependentUpon>201704281427539_InitialMigration.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
@@ -64,6 +67,11 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="EntityConfiguration\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201704281427539_InitialMigration.resx">
+      <DependentUpon>201704281427539_InitialMigration.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

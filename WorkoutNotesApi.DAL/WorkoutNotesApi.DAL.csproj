@@ -49,6 +49,7 @@
     <Compile Include="Interfaces\IApplicationDbContext.cs" />
     <Compile Include="Interfaces\IApplicationUnitOfWork.cs" />
     <Compile Include="Interfaces\IApplicationUnitOfWorkFactory.cs" />
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

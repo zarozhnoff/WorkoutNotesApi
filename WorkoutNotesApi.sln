@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkoutNotesApi", "WorkoutN
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkoutNotesApi.DomainModel", "WorkoutNotesApi.DomainModel\WorkoutNotesApi.DomainModel.csproj", "{977D1EDA-F086-4DDF-BBF2-515D1B852F0B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkoutNotesApi.DAL", "WorkoutNotesApi.DAL\WorkoutNotesApi.DAL.csproj", "{EC4ED549-264A-40FE-955A-C1E925DDD86A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{977D1EDA-F086-4DDF-BBF2-515D1B852F0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{977D1EDA-F086-4DDF-BBF2-515D1B852F0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{977D1EDA-F086-4DDF-BBF2-515D1B852F0B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC4ED549-264A-40FE-955A-C1E925DDD86A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC4ED549-264A-40FE-955A-C1E925DDD86A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC4ED549-264A-40FE-955A-C1E925DDD86A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC4ED549-264A-40FE-955A-C1E925DDD86A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -6,7 +6,8 @@ namespace WorkoutNotesApi.DAL
     {
         public IApplicationUnitOfWork Create()
         {
-            return new ApplicationUnitOfWork();
+            var context = new ApplicationDbContext();
+            return new ApplicationUnitOfWork(context);
         }
     }
 }

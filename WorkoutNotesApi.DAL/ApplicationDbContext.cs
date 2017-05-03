@@ -6,7 +6,7 @@ namespace WorkoutNotesApi.DAL
 {
     public class ApplicationDbContext : DbContext, IApplicationDbContext
     {
-        private const string ConnectionString = "WorkoutNotesDbConnection";
+        private const string ConnectionString = "WorkoutNotesDb";
 
 
         public DbSet<User> Users { get; set; }

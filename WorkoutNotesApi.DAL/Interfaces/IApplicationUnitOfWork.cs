@@ -1,7 +1,10 @@
-﻿namespace WorkoutNotesApi.DAL.Interfaces
+﻿using System;
+using System.Threading.Tasks;
+
+namespace WorkoutNotesApi.DAL.Interfaces
 {
-    public interface IApplicationUnitOfWork
+    public interface IApplicationUnitOfWork : IDisposable
     {
-        
+        Task SaveChangesAsync();
     }
 }

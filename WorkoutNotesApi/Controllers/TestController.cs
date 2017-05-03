@@ -6,7 +6,7 @@ namespace WorkoutNotesApi.Controllers
     {
         public IHttpActionResult Get()
         {
-            return Ok();
+            return Ok("hello world");
         }
     }
 }

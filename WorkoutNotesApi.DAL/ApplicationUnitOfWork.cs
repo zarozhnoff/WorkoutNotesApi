@@ -1,4 +1,5 @@
-﻿using System.Linq;
+﻿using System.Diagnostics;
+using System.Linq;
 using System.Threading.Tasks;
 using WorkoutNotesApi.DAL.Interfaces;
 
@@ -13,6 +14,7 @@ namespace WorkoutNotesApi.DAL
         {
             _context = context;
             var user = _context.Users.FirstOrDefault();
+            Trace.WriteLine(user.FirstName);
         }
 
 

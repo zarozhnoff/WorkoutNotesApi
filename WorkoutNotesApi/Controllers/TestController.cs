@@ -1,5 +1,8 @@
-﻿using System.Web.Http;
+﻿using System.Linq;
+using System.Threading.Tasks;
+using System.Web.Http;
 using WorkoutNotesApi.DAL.Interfaces;
+using WorkoutNotesApi.DomainModel.Entities;
 
 namespace WorkoutNotesApi.Controllers
 {
@@ -13,11 +16,15 @@ namespace WorkoutNotesApi.Controllers
             _unitOfWorkFactory = unitOfWorkFactory;
         }
 
-        public IHttpActionResult Get()
+
+        public async Task<IHttpActionResult> Get()
         {
             using (var applicationUnitOfWork = _unitOfWorkFactory.Create())
             {
-                return Ok("hello world");
+                var userRepository = applicationUnitOfWork.GetRepository<User>();
+                var user = await userRepository.GetAllAsync();
+
+                return Ok(user.First().FirstName);
             }
         }
     }

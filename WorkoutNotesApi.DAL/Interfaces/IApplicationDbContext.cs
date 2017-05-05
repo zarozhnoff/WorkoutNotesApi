@@ -1,12 +1,11 @@
 ﻿using System.Data.Entity;
 using System.Threading.Tasks;
-using WorkoutNotesApi.DomainModel.Entities;
 
 namespace WorkoutNotesApi.DAL.Interfaces
 {
     public interface IApplicationDbContext
     {
-        DbSet<User> Users { get; }
+        DbSet<T> Set<T>() where T : class;
 
         Task<int> SaveChangesAsync();
     }

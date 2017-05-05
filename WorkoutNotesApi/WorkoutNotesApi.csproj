@@ -121,6 +121,10 @@
       <Project>{ec4ed549-264a-40fe-955a-c1e925ddd86a}</Project>
       <Name>WorkoutNotesApi.DAL</Name>
     </ProjectReference>
+    <ProjectReference Include="..\WorkoutNotesApi.DomainModel\WorkoutNotesApi.DomainModel.csproj">
+      <Project>{977D1EDA-F086-4DDF-BBF2-515D1B852F0B}</Project>
+      <Name>WorkoutNotesApi.DomainModel</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

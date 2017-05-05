@@ -1,6 +1,4 @@
-﻿using System.Diagnostics;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 using WorkoutNotesApi.DAL.Interfaces;
 
 namespace WorkoutNotesApi.DAL
@@ -13,10 +11,13 @@ namespace WorkoutNotesApi.DAL
         public ApplicationUnitOfWork(IApplicationDbContext context)
         {
             _context = context;
-            var user = _context.Users.FirstOrDefault();
-            Trace.WriteLine(user.FirstName);
         }
 
+
+        public IRepository<TEntity> GetRepository<TEntity>() where TEntity : class
+        {
+            return new Repository<TEntity>(_context);
+        }
 
         public async Task SaveChangesAsync()
         {

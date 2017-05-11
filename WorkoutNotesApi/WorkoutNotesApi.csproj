@@ -98,6 +98,7 @@
     <Compile Include="App_Start\UnityConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\TestController.cs" />
+    <Compile Include="Controllers\TrainingsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -126,6 +127,10 @@
     <ProjectReference Include="..\WorkoutNotesApi.DomainModel\WorkoutNotesApi.DomainModel.csproj">
       <Project>{977D1EDA-F086-4DDF-BBF2-515D1B852F0B}</Project>
       <Name>WorkoutNotesApi.DomainModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WorkoutNotesApi.Foundation\WorkoutNotesApi.Foundation.csproj">
+      <Project>{E6CBA832-89D8-4581-B46A-ACB88C328D3E}</Project>
+      <Name>WorkoutNotesApi.Foundation</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

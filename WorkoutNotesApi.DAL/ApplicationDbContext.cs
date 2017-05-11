@@ -23,6 +23,7 @@ namespace WorkoutNotesApi.DAL
             base.OnModelCreating(modelBuilder);
         }
 
+
         private static void FixEfProviderServicesProblem()
         {
             // The Entity Framework provider type 'System.Data.Entity.SqlServer.SqlProviderServices, EntityFramework.SqlServer'

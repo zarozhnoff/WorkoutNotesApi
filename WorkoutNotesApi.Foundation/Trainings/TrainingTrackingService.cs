@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 using WorkoutNotesApi.DAL.Interfaces;
 using WorkoutNotesApi.DomainModel.Entities;
@@ -34,7 +33,12 @@ namespace WorkoutNotesApi.Foundation.Trainings
             throw new NotImplementedException();
         }
 
-        public Task CreateTrainingAsync(Training training)
+        public Task<Training> CreateTrainingAsync(Training training)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<bool> DeleteTrainingAsync(Guid id)
         {
             throw new NotImplementedException();
         }

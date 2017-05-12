@@ -11,6 +11,8 @@ namespace WorkoutNotesApi.Foundation.Interfaces
 
         Task<Training> GetTrainingAsync(Guid id);
 
-        Task CreateTrainingAsync(Training training);
+        Task<Training> CreateTrainingAsync(Training training);
+
+        Task<bool> DeleteTrainingAsync(Guid id);
     }
 }

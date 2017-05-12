@@ -1,13 +1,13 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Threading.Tasks;
 using System.Web.Http;
-using System.Web.Http.Description;
+using System.Web.Http.Cors;
 using WorkoutNotesApi.DomainModel.Entities;
 using WorkoutNotesApi.Foundation.Interfaces;
 
 namespace WorkoutNotesApi.Controllers
 {
+    [EnableCors(origins: "*", headers: "*", methods: "*")]
     public class TrainingsController : ApiController
     {
         private readonly ITrainingTrackingService _trainingTrackingService;
@@ -28,35 +28,48 @@ namespace WorkoutNotesApi.Controllers
         }
 
         // GET: api/Trainings/5
-        [ResponseType(typeof(Training))]
-        public IHttpActionResult GetTraining(Guid id)
+        public async Task<IHttpActionResult> GetTraining(Guid id)
         {
-            return Ok();
+            var training = await _trainingTrackingService.GetTrainingAsync(id);
+            if (training == null)
+            {
+                return NotFound();
+            }
+
+            return Json(training);
         }
 
         // PUT: api/Trainings/5
-        [ResponseType(typeof(void))]
-        public IHttpActionResult PutTraining(Guid id, Training training)
+        public IHttpActionResult UpdateTraining(Guid id, Training training)
         {
             return Ok();
         }
 
         // POST: api/Trainings
-        [ResponseType(typeof(Training))]
-        public IHttpActionResult PostTraining(Training training)
+        [HttpPost]
+        public async Task<IHttpActionResult> PostTraining(object training)
         {
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
             }
 
+            //var newTraining = await _trainingTrackingService.CreateTrainingAsync(training);
+
+            //return Json(newTraining);
+
             return Ok();
         }
 
         // DELETE: api/Trainings/5
-        [ResponseType(typeof(Training))]
-        public IHttpActionResult DeleteTraining(Guid id)
+        public async Task<IHttpActionResult> DeleteTraining(Guid id)
         {
+            var result = await _trainingTrackingService.DeleteTrainingAsync(id);
+            if (!result)
+            {
+                return NotFound();
+            }
+
             return Ok();
         }
     }

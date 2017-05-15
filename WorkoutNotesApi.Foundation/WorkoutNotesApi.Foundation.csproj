@@ -34,7 +34,9 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Interfaces\IMuscleTrackingService.cs" />
     <Compile Include="Interfaces\ITrainingTrackingService.cs" />
+    <Compile Include="Muscles\MuscleTrackingService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Trainings\TrainingTrackingService.cs" />
   </ItemGroup>

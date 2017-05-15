@@ -8,7 +8,7 @@ namespace WorkoutNotesApi.DomainModel.Entities
 
         public int NameId { get; set; }
 
-        public ushort SortOrder { get; set; }
+        public int SortOrder { get; set; }
 
         public ICollection<Training> Trainings { get; set; }
     }

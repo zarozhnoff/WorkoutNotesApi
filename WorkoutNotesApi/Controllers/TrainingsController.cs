@@ -47,7 +47,7 @@ namespace WorkoutNotesApi.Controllers
 
         // POST: api/Trainings
         [HttpPost]
-        public async Task<IHttpActionResult> PostTraining(object training)
+        public async Task<IHttpActionResult> PostTraining(Training training)
         {
             if (!ModelState.IsValid)
             {

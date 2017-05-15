@@ -4,6 +4,7 @@ using Unity.WebApi;
 using WorkoutNotesApi.DAL;
 using WorkoutNotesApi.DAL.Interfaces;
 using WorkoutNotesApi.Foundation.Interfaces;
+using WorkoutNotesApi.Foundation.Muscles;
 using WorkoutNotesApi.Foundation.Trainings;
 
 namespace WorkoutNotesApi
@@ -16,6 +17,7 @@ namespace WorkoutNotesApi
 
             container.RegisterType<IApplicationUnitOfWorkFactory, ApplicationUnitOfWorkFactory>();
             container.RegisterType<ITrainingTrackingService, TrainingTrackingService>();
+            container.RegisterType<IMuscleTrackingService, MuscleTrackingService>();
 
             GlobalConfiguration.Configuration.DependencyResolver = new UnityDependencyResolver(container);
         }

@@ -1,8 +1,8 @@
 ﻿using System.Data.Entity;
-using WorkoutNotesApi.DAL.Interfaces;
-using WorkoutNotesApi.DomainModel.Entities;
+using WorkoutNotes.DomainModel.Entities;
+using WorkoutNotes.Repositories.Interfaces;
 
-namespace WorkoutNotesApi.DAL
+namespace WorkoutNotes.Repositories
 {
     public class ApplicationDbContext : DbContext, IApplicationDbContext
     {

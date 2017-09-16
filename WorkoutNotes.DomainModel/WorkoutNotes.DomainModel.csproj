@@ -7,8 +7,8 @@
     <ProjectGuid>{977D1EDA-F086-4DDF-BBF2-515D1B852F0B}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>WorkoutNotesApi.DomainModel</RootNamespace>
-    <AssemblyName>WorkoutNotesApi.DomainModel</AssemblyName>
+    <RootNamespace>WorkoutNotes.DomainModel</RootNamespace>
+    <AssemblyName>WorkoutNotes.DomainModel</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

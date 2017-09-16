@@ -1,4 +1,4 @@
-﻿namespace WorkoutNotesApi.DomainModel.Entities
+﻿namespace WorkoutNotes.DomainModel.Entities
 {
     public class Exercise : ExternalEntity
     {

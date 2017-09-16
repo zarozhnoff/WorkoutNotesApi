@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using WorkoutNotesApi.DomainModel.Entities;
+using WorkoutNotes.DomainModel.Entities;
 
-namespace WorkoutNotesApi.Foundation.Trainings
+namespace WorkoutNotes.Foundation.Trainings
 {
     public interface ITrainingTrackingService
     {

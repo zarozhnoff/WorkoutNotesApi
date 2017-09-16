@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace WorkoutNotesApi.DAL.Interfaces
+namespace WorkoutNotes.Repositories.Interfaces
 {
     public interface IRepository<T> where T : class
     {

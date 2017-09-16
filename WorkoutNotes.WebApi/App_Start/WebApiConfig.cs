@@ -1,6 +1,6 @@
 ﻿using System.Web.Http;
 
-namespace WorkoutNotesApi
+namespace WorkoutNotes.WebApi
 {
     public static class WebApiConfig
     {

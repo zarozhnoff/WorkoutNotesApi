@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using Microsoft.AspNet.Identity;
 
-namespace WorkoutNotesApi.DomainModel.Entities
+namespace WorkoutNotes.DomainModel.Entities
 {
     public class User : Entity, IUser<int>
     {

@@ -1,6 +1,6 @@
 using System.Data.Entity.Migrations;
 
-namespace WorkoutNotesApi.DAL.Migrations
+namespace WorkoutNotes.Repositories.Migrations
 {
     public partial class InitialCreate : DbMigration
     {

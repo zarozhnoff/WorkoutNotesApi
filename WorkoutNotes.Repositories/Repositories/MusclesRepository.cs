@@ -1,8 +1,8 @@
 ﻿using System.Linq;
-using WorkoutNotesApi.DAL.Interfaces;
-using WorkoutNotesApi.DomainModel.Entities;
+using WorkoutNotes.DomainModel.Entities;
+using WorkoutNotes.Repositories.Interfaces;
 
-namespace WorkoutNotesApi.DAL.Repositories
+namespace WorkoutNotes.Repositories.Repositories
 {
     public class MusclesRepository : Repository<Muscle>
     {

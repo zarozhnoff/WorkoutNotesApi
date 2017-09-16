@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Threading.Tasks;
 
-namespace WorkoutNotesApi.DAL.Interfaces
+namespace WorkoutNotes.Repositories.Interfaces
 {
     public interface IApplicationUnitOfWork : IDisposable
     {

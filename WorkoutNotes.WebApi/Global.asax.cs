@@ -1,7 +1,8 @@
 ﻿using System.Web;
 using System.Web.Http;
+using WorkoutNotesApi;
 
-namespace WorkoutNotesApi
+namespace WorkoutNotes.WebApi
 {
     public class WebApiApplication : HttpApplication
     {

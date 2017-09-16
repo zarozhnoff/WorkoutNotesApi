@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
-using WorkoutNotesApi.DomainModel.Entities;
+using WorkoutNotes.DomainModel.Entities;
 
-namespace WorkoutNotesApi.Foundation.Muscles
+namespace WorkoutNotes.Foundation.Muscles
 {
     public interface IMuscleTrackingService
     {

@@ -1,4 +1,4 @@
-﻿namespace WorkoutNotesApi.DomainModel
+﻿namespace WorkoutNotes.DomainModel
 {
     public abstract class Entity
     {

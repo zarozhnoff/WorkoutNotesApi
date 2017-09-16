@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNet.Identity;
-using WorkoutNotesApi.DomainModel.Entities;
+using WorkoutNotes.DomainModel.Entities;
 
-namespace WorkoutNotesApi.Foundation.Roles
+namespace WorkoutNotes.Foundation.Roles
 {
     public sealed class ApplicationRoleManager : RoleManager<Role, int>
     {

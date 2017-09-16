@@ -1,10 +1,10 @@
 using Microsoft.Practices.Unity;
 using System.Web.Http;
 using Unity.WebApi;
-using WorkoutNotesApi.DAL;
-using WorkoutNotesApi.DAL.Interfaces;
-using WorkoutNotesApi.Foundation.Muscles;
-using WorkoutNotesApi.Foundation.Trainings;
+using WorkoutNotes.Foundation.Muscles;
+using WorkoutNotes.Foundation.Trainings;
+using WorkoutNotes.Repositories;
+using WorkoutNotes.Repositories.Interfaces;
 
 namespace WorkoutNotesApi
 {

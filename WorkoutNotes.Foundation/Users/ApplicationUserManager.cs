@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNet.Identity;
-using WorkoutNotesApi.DomainModel.Entities;
+using WorkoutNotes.DomainModel.Entities;
 
-namespace WorkoutNotesApi.Foundation.Users
+namespace WorkoutNotes.Foundation.Users
 {
     public sealed class ApplicationUserManager : UserManager<User, int>
     {

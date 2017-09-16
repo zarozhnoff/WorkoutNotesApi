@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using Microsoft.AspNet.Identity;
 
-namespace WorkoutNotesApi.DomainModel.Entities
+namespace WorkoutNotes.DomainModel.Entities
 {
     public class Role : Entity, IRole<int>
     {

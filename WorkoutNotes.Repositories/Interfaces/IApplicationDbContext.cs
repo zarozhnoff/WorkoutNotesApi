@@ -2,7 +2,7 @@
 using System.Data.Entity.Infrastructure;
 using System.Threading.Tasks;
 
-namespace WorkoutNotesApi.DAL.Interfaces
+namespace WorkoutNotes.Repositories.Interfaces
 {
     public interface IApplicationDbContext
     {

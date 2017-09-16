@@ -7,8 +7,8 @@
     <ProjectGuid>{EC4ED549-264A-40FE-955A-C1E925DDD86A}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>WorkoutNotesApi.DAL</RootNamespace>
-    <AssemblyName>WorkoutNotesApi.DAL</AssemblyName>
+    <RootNamespace>WorkoutNotes.Repositories</RootNamespace>
+    <AssemblyName>WorkoutNotes.Repositories</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

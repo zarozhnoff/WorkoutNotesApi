@@ -1,13 +1,12 @@
-﻿using System;
-using System.Linq;
+﻿using System.Linq;
 using System.Threading.Tasks;
 using System.Web.Http;
 using System.Web.Http.Cors;
-using WorkoutNotesApi.Controllers.DataContracts;
-using WorkoutNotesApi.DomainModel.Entities;
-using WorkoutNotesApi.Foundation.Muscles;
+using WorkoutNotes.DomainModel.Entities;
+using WorkoutNotes.Foundation.Muscles;
+using WorkoutNotes.WebApi.Controllers.DataContracts;
 
-namespace WorkoutNotesApi.Controllers
+namespace WorkoutNotes.WebApi.Controllers
 {
     [EnableCors("*", "*", "*")]
     public class MusclesController : ApiController

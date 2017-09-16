@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace WorkoutNotesApi.DomainModel.Entities
+namespace WorkoutNotes.DomainModel.Entities
 {
     public class MultiLanguageString : Entity
     {

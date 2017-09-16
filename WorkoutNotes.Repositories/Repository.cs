@@ -4,9 +4,9 @@ using System.Data.Entity;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
-using WorkoutNotesApi.DAL.Interfaces;
+using WorkoutNotes.Repositories.Interfaces;
 
-namespace WorkoutNotesApi.DAL
+namespace WorkoutNotes.Repositories
 {
     public class Repository<T> : IRepository<T> where T : class
     {

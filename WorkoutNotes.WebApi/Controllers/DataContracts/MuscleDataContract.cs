@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Runtime.Serialization;
 
-namespace WorkoutNotesApi.Controllers.DataContracts
+namespace WorkoutNotes.WebApi.Controllers.DataContracts
 {
     [DataContract]
     public class MuscleDataContract

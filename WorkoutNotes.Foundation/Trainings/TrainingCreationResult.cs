@@ -1,4 +1,4 @@
-﻿namespace WorkoutNotesApi.Foundation.Trainings
+﻿namespace WorkoutNotes.Foundation.Trainings
 {
     public class TrainingCreationResult
     {

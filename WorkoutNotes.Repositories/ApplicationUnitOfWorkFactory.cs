@@ -1,6 +1,6 @@
-﻿using WorkoutNotesApi.DAL.Interfaces;
+﻿using WorkoutNotes.Repositories.Interfaces;
 
-namespace WorkoutNotesApi.DAL
+namespace WorkoutNotes.Repositories
 {
     public class ApplicationUnitOfWorkFactory : IApplicationUnitOfWorkFactory
     {

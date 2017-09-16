@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace WorkoutNotesApi.DomainModel
+namespace WorkoutNotes.DomainModel
 {
     public class ExternalEntity : Entity
     {

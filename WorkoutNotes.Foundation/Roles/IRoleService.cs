@@ -1,4 +1,4 @@
-﻿namespace WorkoutNotesApi.Foundation.Roles
+﻿namespace WorkoutNotes.Foundation.Roles
 {
     public interface IRoleService
     {

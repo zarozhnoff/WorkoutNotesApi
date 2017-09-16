@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using WorkoutNotesApi.DAL.Interfaces;
-using WorkoutNotesApi.DAL.Repositories;
-using WorkoutNotesApi.DomainModel.Entities;
+using WorkoutNotes.DomainModel.Entities;
+using WorkoutNotes.Repositories.Interfaces;
+using WorkoutNotes.Repositories.Repositories;
 
-namespace WorkoutNotesApi.DAL
+namespace WorkoutNotes.Repositories
 {
     public class ApplicationUnitOfWork : IApplicationUnitOfWork
     {

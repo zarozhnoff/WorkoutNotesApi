@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Runtime.Serialization;
 
-namespace WorkoutNotesApi.Controllers.DataContracts
+namespace WorkoutNotes.WebApi.Controllers.DataContracts
 {
     [DataContract]
     public class TrainingDataContract
